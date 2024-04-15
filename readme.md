@@ -48,7 +48,7 @@ This project is an extension for chromium designed to automate the search of peo
 - For geolocation position three profiles in three different points to triangulate the user.
 
 ---
-
+<!--
 ## ⚙️ Features
 
 | Feature                | Description                           |
@@ -135,7 +135,7 @@ npm test
 > - [ ] `ℹ️  Task 2: Refactor Y`
 > - [ ] `ℹ️ ...`
 
-
+-->
 ---
 
 ## 🤝 Contributing
