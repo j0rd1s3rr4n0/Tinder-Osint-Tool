@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Tinder OSINT",
+  "version": "1.0.0",
+  "description": "Tinder User Searcher",
+  "permissions": ["activeTab","geolocation","storage","contextMenus","scripting"],
+  "icons": {
+    // "16": "icon_active.png",
+    // "48": "icon_active.png",
+    // "128": "icon_active.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Activar"
+  },
+  "content_scripts": [
+    {
+	  "matches": ["https://tinder.com/*","https://maps.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
