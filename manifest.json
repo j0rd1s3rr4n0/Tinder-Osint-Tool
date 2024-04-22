@@ -11,7 +11,7 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Activar"
+    "default_title": "Activate"
   },
   "content_scripts": [
     {

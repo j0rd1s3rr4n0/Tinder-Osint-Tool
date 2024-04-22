@@ -11,10 +11,10 @@
 <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style&logo=HTML5&logoColor=white" alt="HTML5" />
 <img src="https://img.shields.io/badge/JSON-000000.svg?style&logo=JSON&logoColor=white" alt="JSON" />
 </p>
-<img src="https://img.shields.io/github/languages/top/j0rd1s3rr4n0/Tinder-AutoLike-Extension?style&color=5D6D7E" alt="GitHub top language" />
-<img src="https://img.shields.io/github/languages/code-size/j0rd1s3rr4n0/Tinder-AutoLike-Extension?style&color=5D6D7E" alt="GitHub code size in bytes" />
-<img src="https://img.shields.io/github/commit-activity/m/j0rd1s3rr4n0/Tinder-AutoLike-Extension?style&color=5D6D7E" alt="GitHub commit activity" />
-<img src="https://img.shields.io/github/license/j0rd1s3rr4n0/Tinder-AutoLike-Extension?style&color=5D6D7E" alt="GitHub license" />
+<img src="https://img.shields.io/github/languages/top/j0rd1s3rr4n0/Tinder-Osint-Tool?style&color=5D6D7E" alt="GitHub top language" />
+<img src="https://img.shields.io/github/languages/code-size/j0rd1s3rr4n0/Tinder-Osint-Tool?style&color=5D6D7E" alt="GitHub code size in bytes" />
+<img src="https://img.shields.io/github/commit-activity/m/j0rd1s3rr4n0/Tinder-Osint-Tool?style&color=5D6D7E" alt="GitHub commit activity" />
+<img src="https://img.shields.io/github/license/j0rd1s3rr4n0/Tinder-Osint-Tool?style&color=5D6D7E" alt="GitHub license" />
 </div>
 
 <p><b>RECOMNDED:</b> Use extension <a href="https://webextension.org/listing/spoof-geolocation.html">SpoofGeolocation</a> to change gps location</</p>
@@ -48,7 +48,7 @@ This project is an extension for chromium designed to automate the search of peo
 - For geolocation position three profiles in three different points to triangulate the user.
 
 ---
-<!--
+
 ## ⚙️ Features
 
 | Feature                | Description                           |
@@ -57,7 +57,6 @@ This project is an extension for chromium designed to automate the search of peo
 | **📖 Documentation**   | The documentation is minimal. It provides brief descriptions of the files and their functions, but lacks detailed explanations of the system's functionality. |
 | **🔗 Dependencies**    | The system relies on the Google Chrome browser and the `chrome.tabs` API for proper functioning. No external libraries or systems are used. |
 | **🧩 Modularity**      | The system is well-organized into smaller components, with a separate script for each specific functionality. The scripts can be easily maintained and modified as needed. |
-| **✔️ Testing**          | No testing strategies or tools are implemented in the codebase. Proper testing is required to ensure the reliability and correctness of the system. |
 | **⚡️ Performance**      | The system's performance largely depends on Chrome's processing capabilities. It does not seem to have any specific optimizations for speed, efficiency, or resource usage. |
 | **🔐 Security**        | The system does not implement any specific security measures to protect user data or maintain functionality. The focus is on automating actions in a specific web application, which doesn't involve significant security concerns. |
 | **🔀 Version Control** | The codebase is version controlled using Git. The GitHub repository provides version history, issues, and pull requests to enable collaboration and track changes over time. |
@@ -68,74 +67,60 @@ This project is an extension for chromium designed to automate the search of peo
 
 
 ## 📂 Project Structure
-
-
-
-
----
-
-## 🧩 Modules
-
-<details closed><summary>Root</summary>
-
-| File                                                                                                             | Summary                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| ---                                                                                                              | ---                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [background_script.js](https://github.com/j0rd1s3rr4n0/Tinder-AutoLike-Extension/blob/main/background_script.js) | This code snippet is for a Chrome extension. It toggles the activation of a content script on a specific tab when the extension's icon is clicked. The content script is executed when enabled and deactivated when disabled. The icon changes accordingly to indicate the script's state.                                                                                                                                              |
-| [content_script.js](https://github.com/j0rd1s3rr4n0/Tinder-AutoLike-Extension/blob/main/content_script.js)       | The code allows for clicking on a specific element on a webpage at regular intervals. It also includes functionality to toggle the header, enabling or disabling the script's execution. This code is designed specifically for use with the Google Chrome browser.                                                                                                                                                                     |
-| [popup.html](https://github.com/j0rd1s3rr4n0/Tinder-AutoLike-Extension/blob/main/popup.html)                     | This code is a HTML document that creates a webpage for a Tinder AutoLike extension. It contains a title, a button to activate the extension, and a link to the GitHub project. It also includes CSS styling for the button and list items. The JavaScript file "popup_script.js" is linked for additional functionality.                                                                                                               |
-| [popup_script.js](https://github.com/j0rd1s3rr4n0/Tinder-AutoLike-Extension/blob/main/popup_script.js)           | This code listens for the DOMContentLoaded event and adds a click event listener to a button element with the id "toggleButton". When clicked, the code sends a message to the active tab in the Chrome browser using the chrome.tabs API. It also updates the button text based on the response from the content script. If the header is enabled, the button text is "Desactivar", otherwise it is "Activar" and the tab is reloaded. |
+                                                                                                            | ---                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [background_script.js](https://github.com/j0rd1s3rr4n0/Tinder-Osint-Tool/blob/main/background_script.js) | This code snippet is for a Chrome extension. It toggles the activation of a content script on a specific tab when the extension's icon is clicked. The content script is executed when enabled and deactivated when disabled. The icon changes accordingly to indicate the script's state.                                                                                                                                              |
+| [content_script.js](https://github.com/j0rd1s3rr4n0/Tinder-Osint-Tool/blob/main/content_script.js)       | The code allows for clicking on a specific element on a webpage at regular intervals. It also includes functionality to toggle the header, enabling or disabling the script's execution. This code is designed specifically for use with the Google Chrome browser.                                                                                                                                                                     |
+| [popup.html](https://github.com/j0rd1s3rr4n0/Tinder-Osint-Tool/blob/main/popup.html)                     | This code is a HTML document that creates a webpage for a Tinder AutoLike extension. It contains a title, a button to activate the extension, and a link to the GitHub project. It also includes CSS styling for the button and list items. The JavaScript file "popup_script.js" is linked for additional functionality.                                                                                                               |
+| [popup_script.js](https://github.com/j0rd1s3rr4n0/Tinder-Osint-Tool/blob/main/popup_script.js)           | This code listens for the DOMContentLoaded event and adds a click event listener to a button element with the id "toggleButton". When clicked, the code sends a message to the active tab in the Chrome browser using the chrome.tabs API. It also updates the button text based on the response from the content script. If the header is enabled, the button text is "Desactivar", otherwise it is "Activar" and the tab is reloaded. |
 
 </details>
 
 ---
 
+
 ## 🚀 Getting Started
 
 ### ✔️ Prerequisites
 
-Before you begin, ensure that you have the following prerequisites installed:
-> - `ℹ️ Requirement 1`
-> - `ℹ️ Requirement 2`
-> - `ℹ️ ...`
+Before you begin, make sure you have the following prerequisites installed:
+> - `ℹ️ Chromium-based Browser` (Chrome, Chromium, Edge, Brave, Firefox [Chromium-based only],...)
+> - `ℹ️ Tinder Account`
 
 ### 📦 Installation
 
-1. Clone the Tinder-AutoLike-Extension repository:
+1. Clone the Tinder-Osint-Tool repository:
 ```sh
-git clone https://github.com/j0rd1s3rr4n0/Tinder-AutoLike-Extension
+git clone https://github.com/j0rd1s3rr4n0/Tinder-Osint-Tool
 ```
 
 2. Change to the project directory:
 ```sh
-cd Tinder-AutoLike-Extension
+cd Tinder-Osint-Tool
 ```
 
 3. Install the dependencies:
-```sh
-npm install
-```
+- Go to `<browser-name>://extensions`
+- Enable *Developer Mode*
+- Click on `Load uncompressed`
+- Select `Tinder-Osint-Tool` folder
 
-### 🎮 Using Tinder-AutoLike-Extension
+### 🎮 Using Tinder-Osint-Tool
 
-```sh
-node app.js
-```
+1. Go to `https://tinder.com/app/recs` 
+    - Log-In / Sign-In.
+    - Change Configuration [Configuration Info](#-overview).
+    - Click any part of the webpage and go to the main page to swipe.
 
-### 🧪 Running Tests
-```sh
-npm test
-```
+2. Click on the Extension Icon
 
----
+![Extension Icon](https://i.imgur.com/UqdrwCx.png)
 
+3. Fill out the Form
 
-## 🗺 Roadmap
+![Form](https://i.imgur.com/FlNdMdC.png)
 
-> - [X] `ℹ️  Task 1: Implement X`
-> - [ ] `ℹ️  Task 2: Refactor Y`
-> - [ ] `ℹ️ ...`
+4. Press `Activate` to activate and `Deactivate` to deactivate.
 
--->
 ---
 
 ## 🤝 Contributing

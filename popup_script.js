@@ -98,13 +98,13 @@ function action() {
     var button = document.getElementById("toggleButton");
     var buttonText = button.querySelector(".button-82-front.text").innerText;
     
-    if (buttonText.includes('Activar')) {
+    if (buttonText.includes('Activate')) {
         // Cambiar texto y estilos para Desactivar
         button.innerHTML = `
             <span class="button-82-shadow"></span>
             <span class="button-82-edge"></span>
             <span class="button-82-front text">
-                Desactivar
+                Deactivate
             </span>
         `;
         // Llamar a la función startSearch() para iniciar la búsqueda
@@ -115,7 +115,7 @@ function action() {
             <span class="button-82-shadow"></span>
             <span class="button-82-edge"></span>
             <span class="button-82-front text">
-                Activar
+                Activate
             </span>
         `;
         // Llamar a la función stopSearch() para detener la búsqueda
